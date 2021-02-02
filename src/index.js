@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+//Mediacard component
+function MediaCard (props){
+  return <div>
+    <h2>{props.title}</h2>
+
+    <p>{props.body}</p>
+
+    <img src={props.imageUrl} alt="Amazing Scene"></img>
+  </div>
+}
+
+//ReactDOM.render(<MediaCard title="Title is Here" body={<p><b>Body</b> is here</p>} imageUrl="https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__340.jpg"/>, document.querySelector('#root'));
+
+
+//isOpen component
+function Gate(props){
+  return <div>{props.isOpen}</div>;
+
+} 
+ReactDOM.render(<Gate isOpen={false ? <p>Open</p> : <p>Close</p>}/>, document.querySelector('#root'));
