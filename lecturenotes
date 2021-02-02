@@ -1,0 +1,25 @@
+
+github link
+https://github.com/umar51/bootcampclass2.0
+
+1. Its important to enter the name of directory in command npx create-create-app name, same as that kept in github. Add it directly to github not through parent directly.
+
+2. Also generate surge token in that directory.
+
+3. Always use Capital first letter to name component functions. otherwise it will give error.
+
+3.a Always keep the parent <div> one only that is to be returned by component to be rendered.
+
+4. Props are passed while rendering the component, 
+ReactDOM.render(<Hi name="Dave"/>, document.querySelector('#root')); //name Dave is passed
+
+5. To recieve the props, just pass it as argument into function (props) and use it in body like {props.name}
+
+6. Donot use {} while passing the props into function.
+
+7. You can pass as many props as needed.
+
+8. You can pass whole html/jsx tags like <div> or <p> as props by wrapping them in {} like body={<p>Body is here</p>}
+
+continue from https://daveceddia.com/react-getting-started-tutorial/
+
